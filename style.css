@@ -1,0 +1,792 @@
+/* ================================
+   SUMAS NAVIGATION - MAIN STYLES
+   ================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fa;
+    color: #1f2937;
+}
+
+
+/* ================================
+   HEADER
+   ================================ */
+
+.header {
+    height: 70px;
+    width: 100%;
+    background: #003273;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 30px;
+
+    position: relative;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.logo span {
+    font-weight: 400;
+    opacity: 0.9;
+}
+
+.menu-button {
+    background: transparent;
+    border: none;
+    color: white;
+
+    font-size: 28px;
+    cursor: pointer;
+
+    display: none;
+}
+
+
+/* ================================
+   MAIN CONTAINER
+   ================================ */
+
+.main-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    padding: 35px 25px 50px;
+}
+
+
+/* ================================
+   WELCOME SECTION
+   ================================ */
+
+.welcome-section {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.welcome-section h1 {
+    color: #003273;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.welcome-section p {
+    max-width: 700px;
+    margin: 0 auto;
+
+    color: #667085;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* ================================
+   SEARCH SECTION
+   ================================ */
+
+.search-section {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto 25px;
+
+    position: relative;
+}
+
+.search-box {
+    width: 100%;
+    height: 58px;
+
+    background: white;
+
+    border: 1px solid #d0d5dd;
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 18px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.search-icon {
+    font-size: 20px;
+    margin-right: 12px;
+}
+
+.search-box input {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+    outline: none;
+
+    font-size: 15px;
+    color: #1f2937;
+
+    background: transparent;
+}
+
+.search-box input::placeholder {
+    color: #98a2b3;
+}
+
+
+/* ================================
+   SEARCH RESULTS
+   ================================ */
+
+.search-results {
+    position: absolute;
+
+    width: 100%;
+
+    background: white;
+
+    border-radius: 0 0 12px 12px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+
+    overflow: hidden;
+
+    z-index: 2000;
+
+    display: none;
+}
+
+.search-result-item {
+    padding: 14px 18px;
+
+    border-bottom: 1px solid #eaecf0;
+
+    cursor: pointer;
+
+    transition: background 0.2s ease;
+}
+
+.search-result-item:hover {
+    background: #f2f7ff;
+}
+
+.search-result-item:last-child {
+    border-bottom: none;
+}
+
+.result-title {
+    font-weight: 600;
+    color: #003273;
+    margin-bottom: 4px;
+}
+
+.result-type {
+    font-size: 12px;
+    color: #667085;
+}
+
+
+/* ================================
+   MAP SECTION
+   ================================ */
+
+.map-section {
+    width: 100%;
+    height: 550px;
+
+    background: #e5e7eb;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    position: relative;
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ================================
+   LOCATION BUTTON
+   ================================ */
+
+.location-button {
+    position: absolute;
+
+    right: 20px;
+    bottom: 20px;
+
+    background: white;
+
+    color: #003273;
+
+    border: none;
+
+    border-radius: 10px;
+
+    padding: 12px 16px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+    z-index: 500;
+}
+
+.location-button:hover {
+    background: #f2f7ff;
+}
+
+
+/* ================================
+   DESTINATION PANEL
+   ================================ */
+
+.destination-panel {
+    width: 100%;
+    max-width: 850px;
+
+    margin: 25px auto 0;
+
+    padding: 25px;
+
+    background: white;
+
+    border-radius: 14px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+}
+
+.destination-panel h2 {
+    color: #003273;
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.destination-panel p {
+    color: #667085;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+
+/* ================================
+   ROUTE BUTTON
+   ================================ */
+
+.route-button {
+    background: #003273;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 9px;
+
+    padding: 13px 20px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: background 0.2s ease;
+}
+
+.route-button:hover {
+    background: #034eaf;
+}
+
+
+/* ================================
+   MOBILE RESPONSIVENESS
+   ================================ */
+
+@media (max-width: 768px) {
+
+    .header {
+        height: 62px;
+        padding: 0 18px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .main-container {
+        padding: 25px 15px 40px;
+    }
+
+    .welcome-section h1 {
+        font-size: 28px;
+    }
+
+    .welcome-section p {
+        font-size: 14px;
+    }
+
+    .map-section {
+        height: 450px;
+        border-radius: 12px;
+    }
+
+    .search-box {
+        height: 52px;
+    }
+
+    .destination-panel {
+        padding: 20px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .welcome-section h1 {
+        font-size: 24px;
+    }
+
+    .map-section {
+        height: 400px;
+    }
+
+    .location-button {
+        right: 12px;
+        bottom: 12px;
+
+        padding: 10px 13px;
+    }
+}
+/* ==========================================
+   CATEGORY SECTION
+   ========================================== */
+
+.categories-section {
+    max-width: 1100px;
+    margin: 35px auto 30px;
+    padding: 0 20px;
+}
+
+.categories-section h2 {
+    text-align: center;
+    color: #003b7a;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.categories-description {
+    text-align: center;
+    color: #5f6f82;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+
+/* Category Cards */
+
+.category-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.category-card {
+    background: #ffffff;
+    border: 1px solid #d9e0e8;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+}
+
+.category-card h3 {
+    color: #003b7a;
+    font-size: 21px;
+    margin: 0 0 10px;
+}
+
+.category-card p {
+    color: #5f6f82;
+    font-size: 14px;
+    line-height: 1.6;
+    min-height: 65px;
+    margin-bottom: 18px;
+}
+
+
+/* View Facilities Button */
+
+.category-button {
+    width: 100%;
+    padding: 11px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #003b7a;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.category-button:hover {
+    background: #0055a5;
+}
+
+
+/* Responsive layout */
+
+@media (max-width: 900px) {
+
+    .category-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .categories-section {
+        padding: 0 15px;
+    }
+
+    .category-list {
+        grid-template-columns: 1fr;
+    }
+
+    .categories-section h2 {
+        font-size: 24px;
+    }
+
+}
+
+/* ==========================================
+   CATEGORY FACILITIES
+   ========================================== */
+
+.category-facilities {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+}
+
+.category-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.category-header h2 {
+    color: #003b7a;
+    font-size: 28px;
+    margin: 15px 0 8px;
+}
+
+.category-header p {
+    color: #64748b;
+    font-size: 16px;
+    margin: 0;
+}
+
+.back-category-btn {
+    border: none;
+    background: transparent;
+    color: #003b7a;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px 0;
+}
+
+.back-category-btn:hover {
+    text-decoration: underline;
+}
+
+
+/* FACILITY LIST */
+
+.facility-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.facility-item {
+    background: #ffffff;
+    border: 1px solid #dbe3ec;
+    border-radius: 12px;
+    padding: 20px;
+    min-height: 110px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    cursor: pointer;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.facility-item:hover {
+    transform: translateY(-3px);
+    border-color: #003b7a;
+    box-shadow: 0 7px 18px rgba(0, 59, 122, 0.12);
+}
+
+.facility-item-info {
+    flex: 1;
+}
+
+.facility-item-info h3 {
+    color: #003b7a;
+    font-size: 17px;
+    margin: 0 0 7px;
+    line-height: 1.35;
+}
+
+.facility-item-info span {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.facility-arrow {
+    color: #003b7a;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+
+/* ==========================================
+   RESPONSIVE FACILITY LIST
+   ========================================== */
+
+@media (max-width: 900px) {
+    .facility-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .facility-list {
+        grid-template-columns: 1fr;
+    }
+
+    .category-facilities {
+        padding: 0 15px;
+    }
+}
+
+/* =========================================
+   CATEGORY SELECTED VIEW
+   ========================================= */
+
+.main-container.category-selected > section:not(#categorySection) {
+    display: none;
+}
+
+.main-container.category-selected #categorySection {
+    display: block;
+}
+
+/* ==========================================
+   IMPROVED MOBILE RESPONSIVENESS
+   ========================================== */
+
+/* Tablets */
+@media (max-width: 768px) {
+
+    .main-container {
+        padding: 25px 15px 35px;
+    }
+
+    .categories-section {
+        margin-top: 25px;
+        padding: 0;
+    }
+
+    .categories-section h2,
+    .category-header h2 {
+        font-size: 25px;
+    }
+
+    .categories-description,
+    .category-header p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
+    .category-card {
+        padding: 20px;
+    }
+
+    .category-card h3 {
+        font-size: 19px;
+    }
+
+    .facility-item {
+        padding: 18px;
+        min-height: 100px;
+    }
+
+    .facility-item-info h3 {
+        font-size: 16px;
+    }
+
+    .map-section {
+        height: 420px;
+        border-radius: 12px;
+    }
+}
+
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+
+    .header {
+        height: 60px;
+        padding: 0 15px;
+    }
+
+    .logo {
+        font-size: 19px;
+    }
+
+    .main-container {
+        padding: 20px 12px 30px;
+    }
+
+    .welcome-section {
+        margin-bottom: 20px;
+    }
+
+    .welcome-section h1 {
+        font-size: 25px;
+        line-height: 1.3;
+    }
+
+    .welcome-section p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .categories-section h2,
+    .category-header h2 {
+        font-size: 23px;
+        line-height: 1.3;
+    }
+
+    .categories-description,
+    .category-header p {
+        font-size: 14px;
+    }
+
+    .category-list,
+    .facility-list {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .category-card {
+        padding: 18px;
+    }
+
+    .category-card h3 {
+        font-size: 18px;
+    }
+
+    .category-card p {
+        min-height: auto;
+        margin-bottom: 15px;
+    }
+
+    .category-button {
+        min-height: 48px;
+        font-size: 15px;
+    }
+
+    .facility-item {
+        padding: 16px;
+        min-height: 90px;
+    }
+
+    .facility-item-info h3 {
+        font-size: 16px;
+    }
+
+    .facility-item-info span {
+        font-size: 13px;
+    }
+
+    .facility-arrow {
+        font-size: 22px;
+        margin-left: 10px;
+    }
+
+    .search-box {
+        height: 52px;
+        padding: 0 14px;
+    }
+
+    .search-box input {
+        font-size: 14px;
+    }
+
+   .map-section {
+    height: 300px;
+}
+
+    .destination-panel {
+        padding: 18px;
+    }
+
+    .destination-panel h2 {
+        font-size: 19px;
+    }
+
+    .location-button {
+        right: 12px;
+        bottom: 12px;
+        padding: 10px 14px;
+        font-size: 13px;
+    }
+}

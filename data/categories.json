@@ -1,0 +1,32 @@
+[
+  {
+    "category_id": 1,
+    "category_name": "Academic",
+    "description": "Academic facilities including faculties, departments, laboratories and other teaching and learning locations."
+  },
+  {
+    "category_id": 2,
+    "category_name": "Administrative",
+    "description": "Administrative offices and university management facilities."
+  },
+  {
+    "category_id": 3,
+    "category_name": "Health",
+    "description": "Health-related facilities available within the campus."
+  },
+  {
+    "category_id": 4,
+    "category_name": "Religious",
+    "description": "Religious facilities within the university campus."
+  },
+  {
+    "category_id": 5,
+    "category_name": "Recreational",
+    "description": "Recreational and leisure facilities available on campus."
+  },
+  {
+    "category_id": 6,
+    "category_name": "Other Facilities",
+    "description": "Other relevant facilities that do not fall under the main categories."
+  }
+]

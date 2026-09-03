@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SUMAS Navigation</title>
+
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            SUMAS <span>Navigation</span>
+        </div>
+
+        <button id="menuButton" class="menu-button">
+            ☰
+        </button>
+    </header>
+
+
+    <!-- Main Content -->
+    <main class="main-container">
+
+        <!-- Welcome Section -->
+        <section class="welcome-section">
+            <h1>Navigate SUMAS</h1>
+
+            <p>
+                Find buildings, faculties, departments and walking routes
+                around the State University of Medical and Applied Sciences.
+            </p>
+        </section>
+
+
+        <!-- Categories Section -->
+        <section id="categorySection" class="categories-section">
+
+            <h2>Explore by Category</h2>
+
+            <p class="categories-description">
+                Select a category to find facilities within the SUMAS campus.
+            </p>
+
+            <div id="categoryList" class="category-list">
+                <!-- Categories will be loaded here by JavaScript -->
+            </div>
+
+        </section>
+
+
+        <!-- Search Section -->
+        <section class="search-section">
+
+            <div class="search-box">
+
+                <span class="search-icon">🔍</span>
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search for a building, faculty or department..."
+                    autocomplete="off"
+                >
+
+            </div>
+
+            <div id="searchResults" class="search-results"></div>
+
+        </section>
+
+
+        <!-- Map Section -->
+        <section class="map-section">
+
+            <div id="map"></div>
+
+            <button id="locationButton" class="location-button">
+                📍 My Location
+            </button>
+
+        </section>
+
+
+        <!-- Destination Information -->
+        <section id="destinationPanel" class="destination-panel">
+
+            <h2>Destination</h2>
+
+            <p id="destinationName">
+                Select a location from the map or search above.
+            </p>
+
+            <p id="remainingDistance">
+                📍 Remaining Distance: Calculating...
+            </p>
+
+            <div id="routeInfo" style="display: none;">
+                <p>📏 Distance: <span id="distanceText"></span></p>
+                <p>🚶 Walking Time: <span id="walkingTimeText"></span></p>
+            </div>
+
+            <button id="routeButton" class="route-button">
+                🧭 Find Walking Route
+            </button>
+
+            <button id="clearRouteBtn" onclick="clearRoute()" style="display: none;">
+                🗑 Clear Route
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- JavaScript -->
+
+    <!-- Leaflet -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Routing -->
+    <script src="routing.js"></script>
+
+    <!-- Main App -->
+    <script src="app.js"></script>
+
+</body>
+</html>
